@@ -6,7 +6,7 @@
         </Console>
         <File name="File" fileName="log/TestAliento_log4j2.log" append="true"><!-- Defino donde grabo log. -->
             <PatternLayout>
-                <Pattern>%d{dd/MM/YYYY HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</Pattern>
+                <Pattern>%d{dd/MMM/YYYY HH:mm:ss} [%t] %-5level %logger{36} - %msg%n</Pattern>
             </PatternLayout>
         </File>
     </Appenders>
@@ -14,7 +14,7 @@
         <Logger name="es.sacyl.hnss" level="info" additivity="true">
             <AppenderRef ref="Console"/>
         </Logger>
-        <Root level="warn">
+        <Root level="info">
             <AppenderRef ref="File"/>
         </Root>
     </Loggers>
